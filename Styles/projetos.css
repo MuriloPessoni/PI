@@ -1,0 +1,186 @@
+@font-face {                                  /*Fonte Space-mono usada na logo*/              
+    font-family: "space-mono";
+    src:url(/PI/Fonts/SpaceMono-Regular.ttf),
+}
+@font-face {                                  /*Fonte Oswald usada no contatos*/
+    font-family: "itim";
+    src: url(/PI/Fonts/Itim-Regular.otf);
+}
+@font-face {                                  /*Fonte Oswald usada no contatos*/
+    font-family: "oswald";
+    src: url(/PI/Fonts/Oswald-Regular.ttf);
+}
+
+*{  
+    margin: 0;              /*configuraçao para padronizar o site em todos navegadores*/
+    padding: 0; 
+    list-style: none;
+}
+
+.background-color{
+    background-color: #444040;
+    height: 48px;
+    border-radius: 10px;
+    
+}
+.terminal ul li.cores1{
+    background-color: red;
+    border-radius: 12.5px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}  
+.terminal ul li.cores2{
+    background-color: yellow;
+    border-radius: 12.5px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}  
+.terminal ul li.cores3{
+    background-color: #00FF00;
+    border-radius: 12.5px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    left: 85px;
+}  
+.full-background{
+    background-color: #181717;
+    height: 230px;
+}
+.image{
+    float: left;
+    width: 150px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.logo h1{
+    color: white;
+    position: absolute;
+    top:96px;
+    left: 200px;    
+    font-family: "space-mono";
+    font-size: 40px;
+    font-weight: 100;
+}
+.menus{
+    position: absolute;
+    right: 3vh;
+    top: 190px;
+    cursor: pointer;
+}
+.menus ul{
+    display: inline-flex;
+    gap: 7vh;
+    margin-right: 3vh;
+
+}
+.menus ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: "itim";
+    padding-bottom: 17px;
+}
+.dropdown{
+    display: none;
+    background-color: #00315c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,.2);
+    z-index: 1;
+    position: absolute;
+    right: 37%;
+    top: 4vh;
+    transition: all 3s;
+    border-radius: 10px;
+    color: white;
+}
+.dropdown a{
+    color: rgb(7, 6, 6);
+    padding: 12px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: "itim";
+}
+.menus4:hover + .dropdown,                  /*Ao passar o mouse em cima do menu4 ira aparecer o dropdown*/
+.dropdown:hover{display: block;}            /*ao passar o mouse em cima do dropdown ele ficara fixo na tela*/
+
+.dropdown a:hover{
+    background-color: rgba(0,0,0,.1);
+    border-radius: 10px;
+    text-decoration: none;
+}
+.centro{
+    height: 300.5vh;
+    background-color: #30363D;
+}
+.rodape{
+    position: absolute;
+    bottom: -108vh;
+    width: 99vw;
+}
+.rodape{
+    background-color:#444040 ;
+    text-align: center;
+    color: white;
+    border-radius: 30px;
+    position: relative;
+}
+.info {
+    text-align: start;
+    margin-left: 4vh;
+}
+.info .facul{
+    font-size: 20px;
+    font-family: "oswald";
+    color: white;
+}
+.info .contato{
+    font-size: 20px;
+    font-family:"oswald";
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.info h1{
+    color: white;
+    font-size:40px;
+    font-family: "oswald";
+    padding-top: 10px;
+}
+.copi{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.psiconect img{
+    position: absolute;
+    left: 3%;
+    top: 30%;
+    width: 50vh;
+}
+.psiconect{
+    padding-top: 4%;
+    margin-left: 30%;
+    text-align: justify;
+    margin-right: 10%;
+}
+.psiconect h1{
+    font-size: 5vh;
+    font-family: "space-mono";
+    color: #3d803d;
+}
+.psiconect p{
+    font-size:2.2vh;
+    color: #55c055;
+}
+.psiconect a{
+    text-decoration: none;
+}
